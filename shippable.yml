@@ -34,4 +34,6 @@ script:
 after_script:
   - mv $PWD/src/github.com/OneRedOak/sample/junit.xml $PWD/shippable/testresults/
   - mv $PWD/coverage.xml $PWD/shippable/codecoverage/
-  
+notifications:
+ email:
+  - revathi@shippable.com
